@@ -126,14 +126,17 @@ counter.dec() // 12
   (Hint: don't forget to have a space between the firstname and lastname and a period at the end of the sentence.)
 */
 
-function motivation( firstname, lastname ) {
+function motivation(firstname, lastname) {
   var welcomeText = "You're doing awesome, keep it up";
-
+  return function message() {
+    return `${welcomeText} ${firstname} ${lastname}.`;
+  };
+ 
   // code message function here.
-
+ 
   //Uncommment this to return the value of your message function
   //return message;
-}
+ }
 
 var greeting = motivation('Billy', 'Bob'); // 'You're doing awesome keep it up Billy Bob.
 
