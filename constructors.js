@@ -13,7 +13,10 @@
   The values for the make and model will come from two parameters, make and model (in that order).
 */
 
-// Code here
+function CarFactory (make, model){
+  this.make = make;
+  this.model = model;
+}
 
 
 
