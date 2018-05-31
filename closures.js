@@ -94,6 +94,7 @@ function makeCounter() {
 
 function counterFactory(value) {
   // Code here.
+
     return {
       inc: function(){
         value++;
@@ -163,7 +164,7 @@ var module = (function() {
   // Anything that is being returned is made public and can be invoked from
   // outside our lexical scope
   return {
-    // Code here.
+    publicMethod: function(){return privateMethod()}
   };
 })();
 
